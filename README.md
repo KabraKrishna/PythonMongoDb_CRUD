@@ -1,21 +1,44 @@
-**CSE-5331-001**\
-**Project-2**\
-**Implementation of MangoDB database.**\
-By : Krishna Kabra(1001827795), 
-Shubham Simant(1001860599)
+# MongoDB CRUD Operations with Python
 
-**Requirements:**
-1. import pandas
-2. import tabulate
-3. import pymango
+This project demonstrates how to connect MongoDB with Python using the pymongo dependency and perform console-based user interaction to try different CRUD operations on MongoDB, leveraging aggregation functions.
 
-**Restriction:**
-1. Make sure you put all _.csv_ files in csv folder under same project directory
-or Make changes in main function of main.py accordingly.
-2. In order to connect database update **_DB_URL_** constant in _constant.py_ file with appropriate URL. 
+## Dependencies
 
-**Execution:**
-1. Run command **_python3 main.py_** to execute program.
-2. It will display a menu for the execution to be done further.
-3. Provide appropriate input menu item number to fetch corresponding output.   
+* Python 3.6+
+* pymongo
+* tabulate
+* pandas
 
+## Instructions
+
+1. Clone the repository.
+2. Install the dependencies.
+3. Run the `main.py` file.
+
+## Data
+As part of this project I am using  `Art gallery` Dataset, using 5 different `.csv` files to load dummy data. Below are data schema(s) details:
+
+`ARTIST.csv`
+| aID | name | birthDate | deathDate | commission | street | city | stateAb | zipcode |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+
+`ARTWORK.csv`
+| aID | artID | title | creationDate | acquisitionDate | price | form |
+| --- | --- | --- | --- | --- | --- | --- |
+
+`BOUGHT.csv`
+| artID | cID | saleDate |
+| --- | --- | --- |
+
+`CUSTOMER.csv`
+| cID | name | street | city | stateAb | zipcode |
+| --- | --- | --- | --- | --- | --- |
+
+`STATE.csv`
+| ﻿stateAb | stateName |
+| --- | --- |
+## Usage
+
+The `main.py` file provides a console-based interface that allows you to perform CRUD operations on a MongoDB database. To use the interface, simply type the option number from the menu given below:
+
+![image](https://github.com/KabraKrishna/PythonMongoDb_CRUD/assets/29306513/9b195668-50ad-4af7-b9dc-d40770cb2dd9)
